@@ -1,9 +1,5 @@
 function _1(md){return(
-md`<div style="color: grey; font: 13px/25.5px var(--sans-serif); text-transform: uppercase;"><h1 style="display: none;">Radial cluster tree</h1><a href="https://d3js.org/">D3</a> › <a href="/@d3/gallery">Gallery</a></div>
-
-# Radial cluster tree
-
-D3’s [cluster layout](https://d3js.org/d3-hierarchy/cluster) produces node-link diagrams with leaf nodes at equal depth. These are less compact than [tidy trees](/@d3/radial-tree/2), but are useful for dendrograms, hierarchical clustering and [phylogenetic trees](/@d3/tree-of-life). See also the [Cartesian variant](/@d3/cluster/2).`
+md`Це представлення оцінки своїх якостей.`
 )}
 
 function _chart(d3,data)
@@ -75,14 +71,14 @@ function _chart(d3,data)
 
 
 function _data(FileAttachment){return(
-FileAttachment("maksym@2.json").json()
+FileAttachment("maksym.json").json()
 )}
 
 export default function define(runtime, observer) {
   const main = runtime.module();
   function toString() { return this.url; }
   const fileAttachments = new Map([
-    ["maksym@2.json", {url: new URL("./files/7e46eeb2e79a6f59eb650df258892e2a1c07b9473cb633c9503b21fada667793c804c34c8bec7302c3551046f7c7b2af33994d9c21c22c847c2471e46054edcd.json", import.meta.url), mimeType: "application/json", toString}]
+    ["maksym.json", {url: new URL("./files/maskym.json", import.meta.url), mimeType: "application/json", toString}]
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], _1);
