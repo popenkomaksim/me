@@ -1,0 +1,14 @@
+{
+  "name": "a0c0313e38f36b56",
+  "main": "a0c0313e38f36b56@262.js",
+  "version": "262.0.0",
+  "homepage": "https://observablehq.com/d/a0c0313e38f36b56",
+  "author": {
+    "name": "maskym",
+    "url": "https://observablehq.com/@maskym"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
